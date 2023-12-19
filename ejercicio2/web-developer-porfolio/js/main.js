@@ -115,3 +115,29 @@
 	});
 
 })(jQuery);
+
+$(document).ready(function() {
+	// Referencia al contenedor
+	var container = $(".container-blog");
+  
+	// Repite el bloque 5 veces
+	for (var i = 0; i < 5; i++) {
+	  // Genera el HTML para cada iteración
+	  var blogSectionHTML =
+		'<div class="blog-section">' +
+		  '<hr class="blog-hr">' +
+		  '<div class="blog-content">' +
+			'<img src="img/dev.jpg" alt="Blog Image" class="blog-image">' +
+			'<div class="blog-text-container">' +
+			  '<h2 class="subtitle-intro icon-color">What does it take to become a Developer?</h2>' +
+			  '<p class="blog-text">Web development, also known as website development, encompasses a variety of tasks and processes involved in creating  websites for the internet...</p>' +
+			  '<p class="blog-text icon-color">Read More >></p>' +
+			  '<div style="display: flex;"><span class="mr-4 badge badge-custom">Web developer</span> <p class="mr-4"><b class="mr-4">Text</b>Sinan</p> <p class="mr-4"><b class="mr-4">Date</b>10.Oct.2023</p><p class="mr-4"><b class="mr-4">Read</b>1 min.</p></div>' +
+			  '</div>' +
+		  '</div>' +
+		'</div>';
+  
+	  // Agrega el HTML generado al contenedor
+	  container.append(blogSectionHTML);
+	}
+  });
